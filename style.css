@@ -118,12 +118,13 @@ main h1 {
 
 
 section {
+  height: 100vh;
 padding: 50px 50px;
 
 }
 
 .whoWeAre .whoWeAre-text {
-  margin: 0 auto;
+  margin: 50px auto;
   max-width: 70% ;
 }
 
