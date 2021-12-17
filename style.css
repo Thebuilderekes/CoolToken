@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --large-font: 2.25rem;
+  --medium-font: 1.5rem;
+  --normal-font: 1rem;
+  --small-font: 0.875rem;
+
+}
+
+
+a {
+ font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+body {
+   width: 100%;
+   height: 100%;
+  background: #100E0A;
+
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #9bdaf8;
+  font-size: var(--large-font);
+ font-family: 'Lato', sans-serif;
+}
+
+
+h3 {
+  
+   color: #daeef8;
+   text-align: center;
+  
+  }
+
+
+
+p {
+  line-height: 1.5;
+  color: #ffffff;
+  font-size: var(--normal-font);
+  font-weight: 400;
+}
+
+
+header {
+  background-image:   linear-gradient(to bottom, rgba(13, 13, 14, 0.466), rgba(15, 15, 15, 0.479)), url(../assets/img/crypt-dark.jpg);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+header .logo p {
+  color: #ffffff;
+}
+
+
+nav {
+  width: 100%;
+  height: 80px;
+  background: #000000b2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  z-index: 10;
+  
+}
+
+nav .nav-items {
+    margin-right: 50px;
+}
+
+nav .logo img {
+  width: 40%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #cfcaca;
+  font-size: var(--normal-font);
+  padding: 0 10px;
+  transition: 1s all;
+}
+
+nav a:hover {
+
+  color:#ffffff;
+}
+
+
+
+
+main{
+background: #100E0A;
+
+}
+main h1 {
+  color: #cbecf7;
+  font-size: 60px;
+  line-height: 1.5;
+ font-family: 'Lato', sans-serif;
+ text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+
+section {
+padding: 50px 50px;
+
+}
+
+.whoWeAre .whoWeAre-text {
+  margin: 0 auto;
+  max-width: 70% ;
+}
+
+.whoWeAre .whoWeAre-text h2, p {
+   text-align: center;
+}
+
+
+.howTobuy {
+  background: #0f0f0f;
+}
+
+.howTobuy-text h2, p {
+  text-align: center;
+}
+
+
+.steps-wrapper {
+  display: flex;
+}
