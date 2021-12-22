@@ -128,9 +128,7 @@ nav a:hover {
   color:#ffffff;
 }
 
-.show {
-background: red;
-}
+
 
 main{
 background: #100E0A;
@@ -205,18 +203,33 @@ footer {
   background: #010e1a;
   display: flex;
   justify-content: space-evenly;
-  padding: 3em;
+  padding: 2.5em;
+}
+
+
+footer h3 {
+  padding: 0;
+  margin: 0;
+  text-align: left;
 }
 
 footer ul li {
   list-style: none;
+   padding: 5px 0;
 }
 
 
 footer ul li a {
   text-decoration: none;
-  color: #cbecf7;
+  color: #507292;
+ 
 }
+
+footer ul li a:hover {
+  color: #daeef8;
+}
+
+
 
 
 @media screen and (max-width:900px) {
@@ -238,7 +251,37 @@ footer ul li a {
   display: none;
 }
 
+.howTobuy-text--wrapper{
+  flex-direction: column;
+
 }
+
+.howTobuy-text--wrapper article {
+
+  margin: 20px 0;
+}
+
+footer {
+  flex-direction: column;
+
+  padding: 10px;
+
+}
+
+footer h3 {
+  text-align: left;
+  font-size: var(--medium-font);
+}
+
+footer .column {
+  margin: 20px 0;
+}
+
+
+}  /*900px ends*/
+
+
+
 
  @media screen and (max-width:375px) {
 
@@ -280,4 +323,5 @@ footer h3 {
 footer .column {
   margin: 20px 0;
 }
-} 
+
+} /*375px ends*/ 
