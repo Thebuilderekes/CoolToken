@@ -3,13 +3,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+body, html{
+    margin:0;
+    padding:0;
+    overflow: auto;
+}
+
+body, html {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+}
+
+main{
+  width: 100%;
+}
+
 :root{
-  --large-font: 2.25rem;
-  --medium-font: 1.5rem;
-  --normal-font: 1rem;
-  --small-font: 0.875rem;
+  --extra-large-font: 3.75rem; /* 60px */  
+  --large-font: 2.25rem;  /* 36px */ 
+  --medium-font: 1.2rem; /* 19.2px */ 
+  --normal-font: 1rem;  /* 16px */ 
+  --small-font: 0.875rem; /* 14px */ 
+
 
 }
+
 
 
 a {
@@ -25,7 +46,7 @@ body {
 }
 
 section {
-height: 70vh;
+
 padding:  100px 50px;
 
 }
@@ -39,19 +60,23 @@ h2 {
 
 
 h3 {
-  
+  font-size: 1.5rem;
+     margin-bottom: 10px;
    color: #daeef8;
    text-align: center;
+   font-family: 'Montserrat', sans-serif;
   
   }
+
 
 
 
 p {
   line-height: 1.5;
   color: #ffffff;
-  font-size: var(--normal-font);
+  font-size: var(--medium-font);
   font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -59,14 +84,16 @@ header {
   background-image:   linear-gradient(to bottom, rgba(13, 13, 14, 0.466), rgba(15, 15, 15, 0.479)), url(../assets/img/crypt-dark.jpg);
   width: 100%;
   height: 100vh;
-  display: flex;
+ 
 }
 
 header .logo p {
   color: #ffffff;
 }
 
-
+.hamburger-menu {
+  display: none;
+}
 nav {
   width: 100%;
   height: 80px;
@@ -81,7 +108,7 @@ nav {
 }
 
 nav .nav-items {
-    margin-right: 50px;
+    padding-right: 50px;
 }
 
 nav .logo img {
@@ -101,8 +128,9 @@ nav a:hover {
   color:#ffffff;
 }
 
-
-
+.show {
+background: red;
+}
 
 main{
 background: #100E0A;
@@ -110,7 +138,7 @@ background: #100E0A;
 }
 main h1 {
   color: #cbecf7;
-  font-size: 60px;
+  font-size: var(--extra-large-font);
   line-height: 1.2;
  font-family: 'Lato', sans-serif;
  text-align: left;
@@ -144,11 +172,21 @@ main h1 span {
 }
 
 
-.steps-wrapper {
+.howTobuy-text--wrapper {
   display: flex;
 }
 
+.howTobuy-text--wrapper article {
 
+  background: #111111;
+  border-radius: 20px;
+  margin: 0 20px;
+  padding: 20px;
+box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.44);
+-webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.44);
+-moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.44);
+
+}
 .comp-logo-wrapper {
   display: flex;
   justify-content: space-evenly;
@@ -162,3 +200,84 @@ main h1 span {
   
    
 }
+
+footer {
+  background: #010e1a;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3em;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+
+footer ul li a {
+  text-decoration: none;
+  color: #cbecf7;
+}
+
+
+@media screen and (max-width:900px) {
+
+.hamburger-menu {
+  display: block;
+}
+
+.nav-items {
+  width: 100%;
+  background: #000000b2;
+  flex-direction: column;
+  position: absolute;
+  top: 90%;
+}
+
+#nav-items {
+  padding: 10px 0;
+  display: none;
+}
+
+}
+
+ @media screen and (max-width:375px) {
+
+h1 {
+  font-size: var(--large-font);
+}
+section {
+  padding: 20px;
+
+}
+p{
+  font-size: var(--small-font);
+}
+
+
+.howTobuy-text--wrapper{
+  flex-direction: column;
+
+}
+
+.howTobuy-text--wrapper article {
+
+  margin: 20px 0;
+}
+
+footer {
+  flex-direction: column;
+
+  padding: 10px;
+
+}
+
+footer h3 {
+  text-align: left;
+  font-size: var(--medium-font);
+}
+
+
+footer .column {
+  margin: 20px 0;
+}
+} 
