@@ -13,6 +13,10 @@ body, html {
   width: 100%;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
 header {
   width: 100%;
 }
@@ -91,9 +95,14 @@ header .logo p {
   color: #ffffff;
 }
 
-.hamburger-menu {
+.hamburger-menu  {
   display: none;
 }
+
+.close-menu {
+  display: none;
+}
+
 nav {
   width: 100%;
   height: 80px;
@@ -129,6 +138,9 @@ nav a:hover {
 }
 
 
+.show {
+  display: block;
+}
 
 main{
 background: #100E0A;
@@ -226,7 +238,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-  color: #daeef8;
+  color: #0992d6;
 }
 
 
@@ -238,18 +250,29 @@ footer ul li a:hover {
   display: block;
 }
 
+
+
+
 .nav-items {
   width: 100%;
   background: #000000b2;
+  display: flex;
   flex-direction: column;
   position: absolute;
-  top: 90%;
+  left: 0;
+  top: 93%;
+}
+
+.nav-items a {
+  padding: 10px 10px;
 }
 
 #nav-items {
   padding: 10px 0;
-  display: none;
+
+   display: none;
 }
+
 
 .howTobuy-text--wrapper{
   flex-direction: column;
